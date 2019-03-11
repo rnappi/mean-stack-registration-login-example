@@ -2,8 +2,16 @@
 <div class="form-container">
     <form method="post">
         <div class="form-group">
-            <label for="question">First name</label>
-            <input type="text" id="question" class="form-control" ng-model="" required />
+            <label for="question">Question</label>
+            <input type="text" id="question" class="form-control" ng-model="vm.question.text" required />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveQuestion()">Add</button>
         </div>
     </form>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="question in vm.questions" ng-model="vm.questions">
+                {{question.text}}.
+        </li>
+    </ul>
 </div>

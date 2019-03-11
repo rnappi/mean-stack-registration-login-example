@@ -55,7 +55,7 @@ app.use('/login', require('./controllers/login.controller'));
 app.use('/register', require('./controllers/register.controller'));
 app.use('/app', require('./controllers/app.controller'));
 app.use('/api/users', require('./controllers/api/users.controller'));
-
+app.use('/api/questions', require('./controllers/api/questions.controller'));
 
 // configuração do redirecionamento inicial é isso que indica o que vai acontecer quando for feita a chamada do 
 // http://localhost:8092. Nesse caso, a aplicação será direcionada para 
